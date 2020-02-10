@@ -53,6 +53,13 @@ class App extends React.Component{
     string2='';
     this.setState({display: result,operation:true,signs:true,order:1});
   }
+
+  reset(){
+    string='';
+    string2='';
+    this.setState({sign:null,order:1,display:'',result:'',operation: false,signs:true,});
+  }
+
   render(){
     return (
       
