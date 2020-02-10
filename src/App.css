@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  min-width: 95%;
+  max-width: 95%;
+  min-height: 100%;
+  flex:1;
+  display: flex;
+}
+
+.table{
+  justify-content: center;
+  margin-top: 1em;
+  flex:1;
+  border: 1px solid black;
+  border-radius: 20px;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+.display{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  min-height: 20em;
+  min-width: 90em;
+  border-radius: 20px;
+  border-style:solid;
+}
+.header-row{
+  flex:1;
+  display: flex;
+  flex-direction: row;
+}
+
+.row{
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  margin: 1em;
+}
+
+.buttons{
+  border-radius: 20px;
+  align-self: center;
+  max-height: 5em;
+  flex: 0.1;
+  margin: 2em;
+  background-color: Transparent;
+  border:none;
+  background-color: darkgray;
+  /* background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none; */
+  min-height: 5em;
+  min-width: 15em;
+}
+
+.buttons-content{
+  vertical-align: center;
+  align-self: center;
+}
