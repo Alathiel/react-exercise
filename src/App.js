@@ -37,22 +37,21 @@ class App extends React.Component{
 
   calculate(){
     var sign=this.state.sign;
-
     if(sign === '+'){
-      result = +string + +string2;
+      result = parseInt(string) + parseInt(string2);
     }
     else if(sign === '-'){
-      result = +string - +string2;
+      result = parseInt(string) - parseInt(string2);
     }
     else if(sign === '/'){
-      result = +string / +string2;
+      result =parseInt(string) / parseInt(string2);
     }
     else if(sign === '*'){
-      result = +string * +string2;
+      result = parseInt(string) * parseInt(string2);
     }
     string.splice(0);
     string2.splice(0);
-    this.setState({display: result,operation:true,signs:true});
+    this.setState({display: result,operation:true,signs:true,order:1});
   }
   render(){
     return (
