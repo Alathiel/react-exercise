@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 // import { Button } from 'react-bootstrap';
 
-var string = [];
-var string2 = [];
+var string='';
+var string2='';
 var result = 0;
 
 class App extends React.Component{
@@ -23,9 +23,9 @@ class App extends React.Component{
       this.setState({display:'',operation:false});
     }
     if(this.state.order === 1)
-    string.push(number);
+    string = string + ''+number+'';
     else
-    string2.push(number);
+    string2 = string2 + ''+number+'';
 
     this.setState(({ display }) => ({display: display + number,signs:false}));
   }
@@ -49,8 +49,8 @@ class App extends React.Component{
     else if(sign === '*'){
       result = parseInt(string) * parseInt(string2);
     }
-    string.splice(0);
-    string2.splice(0);
+    string='';
+    string2='';
     this.setState({display: result,operation:true,signs:true,order:1});
   }
   render(){
